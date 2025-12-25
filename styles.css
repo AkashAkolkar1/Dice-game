@@ -1,0 +1,88 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+/* Styled Roll Dice button to match Dicee theme */
+#roll-button {
+  display: block;
+  margin: 28px auto;
+  padding: 12px 28px;
+  font-size: 1.6rem;
+  font-family: 'Indie Flower', cursive;
+  color: #232931;
+  background: linear-gradient(135deg, #4ECCA3 0%, #00ADB5 100%);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.35), inset 0 -6px 0 rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  position: relative;
+}
+
+#roll-button::before {
+  content: "🎲";
+  margin-right: 10px;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+#roll-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.03);
+}
+
+#roll-button:active {
+  transform: translateY(1px) scale(.99);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.28);
+}
+
+#roll-button:focus {
+  outline: 3px solid rgba(78,204,163,0.18);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  #roll-button {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    margin: 18px auto;
+  }
+}
