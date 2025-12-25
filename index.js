@@ -32,11 +32,7 @@ function rollBothDice() {
     updateResultHeading();
 }
 
-function rollPlayer1Only() {
-    randomvalue1 = getRandomDie();
-    updateImages();
-    updateResultHeading();
-}
+
 
 // Initialize when DOM is ready and hook up the button
 document.addEventListener("DOMContentLoaded", function() {
